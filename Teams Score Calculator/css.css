@@ -1,0 +1,116 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(76, 246, 144);
+    background: linear-gradient(315deg, rgba(76, 246, 144, 1) 35%, rgba(0, 255, 244, 1) 100%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inputuri {
+    border: rgb(0, 129, 201, 0.5) solid 1.5px;
+    margin: 4%;
+    margin-bottom: 1%;
+    padding: 1%;
+    position: relative;
+    box-shadow: 1px 1px 30px 10px #144272;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.forms {
+    justify-content: center;
+    margin: -5%;
+
+}
+
+form {
+    margin: 20px;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    flex-direction: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    font-size: 12x;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#calculate-button {
+    width: 50%;
+    background-color: blue;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+#win-message {
+    border: #00337C none 0.2px;
+    text-align: center;
+    font-size: 15px;
+    padding: 3%;
+    margin-top: 5px;
+    border-radius: 50px;
+    background-color: rgb(3, 201, 136, 0.4);
+    visibility: hidden;
+}
+
+.titlu {
+    width: 100%;
+    background: rgb(32, 82, 149, 0.5);
+
+
+}
+
+#winner {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px red;
+    margin-bottom: 1px;
+    padding: 5px;
+    font-size: 30px;
+    color: rgb(255, 201, 60);
+    width: 100%;
+    height: auto;
+}

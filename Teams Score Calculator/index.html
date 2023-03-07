@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mach Score</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+
+<body>
+	<h1 class="titlu">Score Calculator</h1>
+	<div class="container">
+
+		<div class="inputuri">
+<!-- FORMULARE -->
+			<div class="forms">
+				<form id="form1">
+					<h2>First Team</h2>
+					<label>Score 1: <input type="number" id="score1" placeholder="Write first Score"></label>
+					<br>
+					<label>Score 2: <input type="number" id="score2" placeholder="Write second Score"></label>
+					<br>
+					<label>Score 3: <input type="number" id="score3" placeholder="Write third Score"></label>
+				<br>
+				</form>
+				<form id="form2">
+					<h2>Second Team</h2>
+					<label>Score 1: <input type="number" id="score4" placeholder="Write first Score"></label>
+					<br>
+					<label>Score 2: <input type="number" id="score5" placeholder="Write second Score"></label>
+					<br>
+					<label>Score 3: <input type="number" id="score6" placeholder="Write third Score"> </label>
+				<br>
+				</form>
+			</div>
+
+			<button id="calculate-button" onclick="calculate()" >Calculate</button>
+		</div>	
+
+
+		<h1 id="winner"></h1>
+		<div id="win-message"></div>
+	</div>
+	
+	<br>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
