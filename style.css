@@ -42,9 +42,6 @@ html {
 
 body {
     background: var(--clr-light);
-    background-color: var(--clr-light);
-    -webkit-background-color: var(--clr-light);
-    -moz-background-color: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -263,6 +260,9 @@ header {
 
 .intro {
     position: relative;
+    background-color: var(--clr-light);
+    -webkit-background-color: var(--clr-light);
+    -moz-background-color: var(--clr-light);
 }
 
 .intro__img {
