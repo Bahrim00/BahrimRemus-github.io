@@ -269,3 +269,11 @@ p.hintText {
 .ghilimele {
     color: green;
 }
+
+@media screen and (max-width: 600px)
+{
+    body {
+        width: fit-content;
+    }
+
+}
