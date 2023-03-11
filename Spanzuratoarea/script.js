@@ -132,7 +132,7 @@ const init = function (state) {
     select_word = words.keys().next().value;
     document.querySelector('.next-btn').addEventListener('click', nextWord);
     lives = 6;
-    livesImg.src = `./Spanzuratoarea/images/start.png`;
+    livesImg.src = `images/start.png`;
     // capturing letters div
     letters = document.querySelectorAll('.alpha');
     liveSpan.innerHTML = lives;
@@ -181,7 +181,7 @@ const showNotif = function (msg) {
         notif.classList.add('hidden');
         letterDiv.classList.remove('blur');
         allButtons.forEach(button => button.classList.remove('disabled'));
-        livesImg.src = './Spanzuratoarea/images/start.png';
+        livesImg.src = 'images/start.png';
 
         liveSpan.innerHTML = lives.toString();
         container.classList.remove('blur');
@@ -204,7 +204,7 @@ const decreaseLife = function () {
 
 
     } else {
-        livesImg.setAttribute('src', `./Spanzuratoarea/images/${lives}.png`);
+        livesImg.setAttribute('src', `images/${lives}.png`);
     }
 };
 
