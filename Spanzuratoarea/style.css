@@ -274,12 +274,18 @@ p.hintText {
 @media screen and (max-width: 600px)
 {
     body {
-        width: fit-content;
-        background: rgb(15, 135, 0);
-        background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 25%, rgba(0, 228, 224, 0.3905882352941177) 200%);
-        color: white;
-        text-align: center;
+        font-size:16px;
 
     }
-
+    .wrapper {
+        width:100%;
+        margin:auto;
+    }
+    .hint-btn,
+    .reset-btn {
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 }
