@@ -275,6 +275,7 @@ p.hintText {
 {
     body {
         font-size:16px;
+        background: rgb(15, 135, 0);
 
     }
     .wrapper {
