@@ -132,7 +132,7 @@ const init = function (state) {
     select_word = words.keys().next().value;
     document.querySelector('.next-btn').addEventListener('click', nextWord);
     lives = 6;
-    livesImg.src = `start.png`;
+    livesImg.href = `https://github.com/Bahrim00/BahrimRemus-github.io/blob/main/Spanzuratoarea/start.png?raw=true`;
     // capturing letters div
     letters = document.querySelectorAll('.alpha');
     liveSpan.innerHTML = lives;
@@ -181,7 +181,7 @@ const showNotif = function (msg) {
         notif.classList.add('hidden');
         letterDiv.classList.remove('blur');
         allButtons.forEach(button => button.classList.remove('disabled'));
-        livesImg.src = 'start.png';
+        livesImg.href = 'https://github.com/Bahrim00/BahrimRemus-github.io/blob/main/Spanzuratoarea/start.png?raw=true';
 
         liveSpan.innerHTML = lives.toString();
         container.classList.remove('blur');
