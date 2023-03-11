@@ -6,13 +6,9 @@
 }
 
 body {
-    background: rgb(15, 135, 0);
-    background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 25%, rgba(0, 228, 224, 0.3905882352941177) 200%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #000000 100%);
     color: white;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 
 }
 
