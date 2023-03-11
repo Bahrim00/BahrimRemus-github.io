@@ -1,3 +1,6 @@
+html{
+    min-height:100%
+}
 body {
     width: fit-content;
     background: rgb(15, 135, 0);
