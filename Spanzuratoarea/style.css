@@ -280,4 +280,7 @@ p.hintText {
     body {
         width:80%;
     }
+    .letter-div{
+        width:70%;
+    }
 }
