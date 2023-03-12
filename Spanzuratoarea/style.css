@@ -1,7 +1,6 @@
 html {
     min-height: 100%;
-    background: rgb(15, 135, 0);
-    background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 0%, rgba(0, 228, 224, 0.3905882352941177) 100%);
+
 }
 
 body {
@@ -103,7 +102,6 @@ body {
 }
 
 .letter-div {
-    width: 70%;
     border: 0.1rem black solid;
     margin: auto;
     margin-top: 1rem;
@@ -124,15 +122,17 @@ body {
 }
 
 .word-div {
-    display: inline-flex;
+    display: flex;
     padding-top: 2rem;
+    margin: auto;
     color: black;
     display: flex;
     justify-content: center;
 }
 
 .word {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+    width: inherit;
 }
 
 .notif {
@@ -331,7 +331,7 @@ p.hintText {
 
     .hint-btn,
     .reset-btn {
-        margin-top: 1rem;
+        margin-top: auto;
         margin-left: 0;
         margin-right: 0;
         width: 50px;
@@ -341,7 +341,7 @@ p.hintText {
     }
 
     .hint-btn {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
     }
 
     .reset-btn:hover:before {
@@ -362,10 +362,10 @@ p.hintText {
 
 
     .head {
-        font-size: 17px;
-        margin-left: 20px;
+
+        margin: -15px 0px 5px 0px;
         padding: 0;
-        width: max-content;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -388,7 +388,19 @@ p.hintText {
         color: black;
         display: flex;
         justify-content: center;
-        width: auto;
+        align-items: center;
+        width: 20%;
+        font-size: 14px;
+        margin: auto;
+
+
+
+
         /* margin-left: -3rem; */
+    }
+
+    .elements {
+        display: flex;
+        justify-content: center;
     }
 }
