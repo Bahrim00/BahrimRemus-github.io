@@ -1,613 +1,208 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Custom propreties */
-
-:root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Sans Pro', monospace;
-
-    --fw-reg: 300;
-    --fw-bold: 900;
-
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
-
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
-}
-
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5;
-        --fs-body: 1.125rem;
-    }
-}
-
-/* General Styles */
-
-html {
-    scroll-behavior: smooth;
-    width: 100%;
-}
-
-body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-}
-
-section {
-    padding: 5em 2em;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-strong {
-    font-weight: var(--fw-bold);
-}
-
-:focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
-}
-
-
-.btn {
-    display: inline-block;
-    padding: .5em 1.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-
-/* Typography */
-
-h1,
-h2,
-h3 {
-    line-height: 1;
-    margin: 0;
-}
-
-h1 {
-    font-size: var(--fs-h1)
-}
-
-h1 {
-    font-size: var(--fs-h2)
-}
-
-h1 {
-    font-size: var(--fs-h3)
-}
-
-.section__title {
-    margin-bottom: .25em;
-}
-
-.section__title--intro {
-    font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong {
-    font-weight: var(--fw-reg);
-}
-
-.section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-    padding: .25em 1em;
-}
-
-.section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 1em;
-}
-
-/* Header */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0em;
-}
-
-.nav {
-    position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-}
-
-.nav__list {
-    list-style: none;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav__link {
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
-    text-decoration: none;
-}
-
-.nav__link:hover {
-    color: var(--clr-accent);
-}
-
-.nav-toggle {
-    padding: .25em;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
-}
-
-.nav-open .nav {
-    transform: translateX(0);
-}
-
-.nav-open .nav-toggle {
-    position: fixed;
-}
-
-.nav-open .hamburger {
-    transform: rotate(.625turn);
-}
-
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-    opacity: 0;
-}
-
-.hamburger {
-    display: block;
-    position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.hamburger::before {
-    top: 6px;
-}
-
-.hamburger::after {
-    bottom: 6px;
-}
-
-.logo {
-    max-width: 100%;
-    margin: -5%;
-    padding: 0;
-}
-
-.logo-img {
-    padding: 0;
-    margin: 0 0 -100px -50px;
-}
-
-/* Intro Section */
-
-.intro {
-    position: relative;
-    background-color: var(--clr-light);
-    -webkit-background-color: var(--clr-light);
-    -moz-background-color: var(--clr-light);
-}
-
-.intro__img {
-    box-shadow: var(--bs);
-}
-
-.section__subtitle--intro {
-    display: inline-block;
-}
-
-@media (min-width: 500px) {
-    .intro {
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas:
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .section__subtitle--intro {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-    }
-}
-
-
-/* My services section */
-
-.my-services {
-    background-image: url("/Users/remus/Desktop/Learning/Projects/Portofolio/background-image.jpg");
-    background-color: var(--clr-dark);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
-
-}
-
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after {
-    content: "";
-    display: block;
-    width: 25%;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services {
-    margin-bottom: 4em;
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1em;
-}
-
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .service+.services {
-        margin-left: 2em;
-    }
-}
-
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
-@media(min-width:600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas:
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    .section__title--about {
-        grid-area: title;
-    }
-
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px +4em);
-    }
-
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-
-/* My Work */
-
-.my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;
-    -webkit-box-shadow: inset 0px 15px 20px -5px rgba(0, 0, 0, 0.9);
-    box-shadow: inset 0px 50px 20px -5px var(--clr-light);
-}
-
-.portofolio {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.portofolio__item {
-    /* background: var(--clr-accent); */
-    overflow: hidden;
-}
-
-/* .portofolio__item:hover {
-    transform: scale(3);
-    width: 20rem;
-    height: 100px;
-    margin: 1px;
-} */
-
-.portofolio__img {
-    padding: 5%;
-    width: 700px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project1,
-.project2,
-.project3 {
-    transition: transform 0.3s ease-in-out;
-}
-
-.project1 {
-    display: flex;
-    justify-content: flex-end;
-    border: rgba(0, 0, 0, .15) 1px solid;
-}
-
-.portofolio__img:hover {
-    transform: scale(1.2) rotate(1deg) translateX(5px);
-}
-
-.project2:hover {
-    transform: scale(1) rotate(-3deg) translateY(0.2px);
-}
-
-.project3 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.project1Text {
-    position: absolute;
-    margin: -101em 1em 1em 5em;
-    letter-spacing: 00.05em;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Mynerve', Courier, monospace;
-    font-weight: 100;
-    text-shadow: #111 5px 3px 5px;
-    color: white;
-}
-
-.project2Text {
-    position: absolute;
-    margin: 27rem 1rem 1rem 47rem;
-    letter-spacing: 00.05em;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Mynerve', Courier, monospace;
-    font-weight: 100;
-    text-shadow: #111 5px 3px 5px;
-}
-
-.project3Text {
-    position: absolute;
-    margin: 54rem 1rem 1rem 5rem;
-    letter-spacing: 00.05em;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Mynerve', Courier, monospace;
-    font-weight: 100;
-    text-shadow: #111 5px 3px 5px;
-}
-
-.project4Text {
-    position: absolute;
-    margin: 83rem 1rem 1rem 47rem;
-    letter-spacing: 00.05em;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Mynerve', Courier, monospace;
-    font-weight: 100;
-    text-shadow: #111 5px 3px 5px;
-}
-
-.hangman {
-    color: red;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    padding: 50px;
-
-}
-
-
-/* footer */
-
-footer {
-    background: #111;
-    color: var(--clr-accent);
-    text-align: center;
-    padding: 2.5em 0;
-    font-size: var(--fs-h3);
-}
-
-.footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer__link {
-    font-weight: var(--fw-bold);
-}
-
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
-}
-
-.social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
-}
-
-.social-list__item {
-    margin: 0 .5em;
-}
-
-.social-list__link {
-    padding: .5em;
-}
-
-
-/* Individual portofolio item */
-
-.portolio-item-individual {
-    margin: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-@media (max-width:500px) {
-    .logo-img {
-        padding: 0px;
-        margin: -60px 0px -90px -10px;
-    }
-
-    .prejectText {
-        visibility: hidden;
-    }
-
-    .logo-img {
-        padding: 0;
-        margin: 0 0 -100px -50px;
-    }
-
-    .intro {
-        position: relative;
-        background-color: var(--clr-light);
-        margin: 1;
-        display: flex;
-        -webkit-background-color: var(--clr-light);
-        -moz-background-color: var(--clr-light);
-        flex-direction: column;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Bahrim Portofolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Roboto+Mono:wght@100&family=Smooch+Sans:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b97d2f5b13.js" crossorigin="anonymous"></script>
+    <script src="portofolio.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+            <img src="signature.png" alt="" class="logo-img">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong> Bahrim Remus</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> front-end dev </p>
+        <img src="./profile.jpeg" alt="a picture of Bahrim" class="intro__img">
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere nisi eaque animi sint velit
+                    fugiat?
+                    Et reprehenderit temporibus itaque nemo quam, unde rem ipsam, aspernatur cupiditate repellendus
+                    natus dicta!</p>
+            </div>
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, soluta sed sunt assumenda
+                    earum magnam quam, consequatur ex quasi quidem amet error. Aliquid quis vero, alias esse obcaecati
+                    ad maxime!</p>
+            </div>
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam officiis eaque explicabo fugit at,
+                    quasi ipsam, voluptates quas et quis amet ad quidem molestiae quia! Nesciunt sit illo voluptates
+                    nulla?</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Designer & Web developer based in Romania</p>
+
+        <div class="about-me__body">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Amet officiis quae nesciunt suscipit quos! Repellat odit
+                blanditiis necessitatibus neque. Facilis aspernatur saepe quod
+                aliquam sit unde natus adipisci dolore ut?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Commodi tempora inventore eum
+                rem porro saepe quas accusamus, sint ea mollitia doloribus sunt atque
+                distinctio illum repudiandae consequatur vel, deserunt cupiditate!</p>
+        </div>
+
+        <img src="img1.jpg" alt="" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portofolio">
+
+            <!-- Portofolio item 01-->
+
+            <a href="./Spanzuratoarea/index.html" class="portofolio__item project1"><img src="project4.png" alt=""
+                    class="portofolio__img">
+                <h3 class="project4Text prejectText"><span class="hangman">HangMan</span> Is a simple word game in which
+                    a
+                    player tries
+                    to guess a secret word by
+                    guessing its letters one by one. For every incorrect guess, a part of a human body is drawn on a
+                    board -
+                    an arm, a leg, a head, etc. - until the entire body is drawn. The objective of the game is to guess
+                    the
+                    secret word before the entire body is drawn. The game is sometimes used as an educational game to
+                    encourage the development of spelling and vocabulary skills.</h3>
+            </a>
+
+            <!-- Portofolio item 02-->
+            <a href="./Calculator/index.html" class="portofolio__item project2"><img src="project2.png" alt=""
+                    class="portofolio__img"></a>
+            <h3 class="project3Text prejectText"><span class="hangman">HangMan</span> Is a simple word game in which a
+                player tries
+                to guess a secret word by
+                guessing its letters one by one. For every incorrect guess, a part of a human body is drawn on a board -
+                an arm, a leg, a head, etc. - until the entire body is drawn. The objective of the game is to guess the
+                secret word before the entire body is drawn. The game is sometimes used as an educational game to
+                encourage the development of spelling and vocabulary skills.</h3>
+            <!-- Portofolio item 03-->
+            <a href="./Todo List/Todo-html.html" class="portofolio__item project3">
+                <img src="project3.png" alt="" class="portofolio__img">
+            </a>
+            <h3 class="project2Text prejectText"><span class="hangman">HangMan</span> Is a simple word game in which a
+                player tries
+                to guess a secret word by
+                guessing its letters one by one. For every incorrect guess, a part of a human body is drawn on a board -
+                an arm, a leg, a head, etc. - until the entire body is drawn. The objective of the game is to guess the
+                secret word before the entire body is drawn. The game is sometimes used as an educational game to
+                encourage the development of spelling and vocabulary skills.</h3>
+            <a href="./Teams Score Calculator/index.html" class="portofolio__item">
+                <img src="project1.png" alt="" class="portofolio__img project4">
+                <h3 class="project1Text prejectText"><span class="hangman">HangMan</span> Is a simple word game in which
+                    a player
+                    tries
+                    to guess a secret word by
+                    guessing its letters one by one. For every incorrect guess, a part of a human body is drawn on a
+                    board -
+                    an arm, a leg, a head, etc. - until the entire body is drawn. The objective of the game is to guess
+                    the
+                    secret word before the entire body is drawn. The game is sometimes used as an educational game to
+                    encourage the development of spelling and vocabulary skills.</h3>
+            </a>
+
+            <!-- Portofolio item 04-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img4.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+            <!-- Portofolio item 05-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img5.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+            <!-- Portofolio item 06-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img6.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+            <!-- Portofolio item 07-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img7.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+
+            <!-- Portofolio item 08-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img8.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+            <!-- Portofolio item 09-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img9.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+            <!-- Portofolio item 10-->
+            <!-- <a href="#" class="portofolio__item">
+                <img src="/Users/remus/Desktop/Learning/Projects/Portofolio/img10.jpg" alt="" class="portofolio__img">
+            </a> -->
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="remus.bahrim@yahoo.com" class="footer__link">remus.bahrim@yahoo.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
