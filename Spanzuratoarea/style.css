@@ -369,7 +369,7 @@ p.hintText {
         color: bisque;
         margin: auto;
         padding: 1px;
-        width: 80%;
+        width: fit-content;
         background-color: goldenrod;
     }
 }
