@@ -39,6 +39,7 @@
 html {
     scroll-behavior: smooth;
     width: 100%;
+
 }
 
 body {
@@ -48,6 +49,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    width: 100%;
 }
 
 section {
@@ -302,6 +304,7 @@ header {
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
 }
 
 
@@ -314,7 +317,7 @@ header {
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
-
+    margin: 50px;
 }
 
 .section__title--services {
@@ -334,6 +337,7 @@ header {
 
 .services {
     margin-bottom: 4em;
+
 }
 
 .service {
@@ -587,27 +591,39 @@ footer {
 
 
 @media (max-width:500px) {
-    .logo-img {
-        padding: 0px;
-        margin: -60px 0px -90px -10px;
-    }
+
+
 
     .prejectText {
-        visibility: hidden;
+        display: none;
     }
 
     .logo-img {
         padding: 0;
-        margin: 0 0 -100px -50px;
+        margin: -32px 0px -66px 0px;
     }
 
     .intro {
         position: relative;
         background-color: var(--clr-light);
-        margin: 1;
+        padding: 42px 25px 61px 25px;
         display: flex;
         -webkit-background-color: var(--clr-light);
         -moz-background-color: var(--clr-light);
+        flex-direction: column;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        width: 100%;
+
+    }
+
+
+
+    .portofolio {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
     }
 }
