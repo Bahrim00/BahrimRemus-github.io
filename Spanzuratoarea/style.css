@@ -1,5 +1,8 @@
 html {
     min-height: 100%;
+    display: flex;
+    justify-content: center;
+    ;
 
 }
 
@@ -109,6 +112,7 @@ body {
     box-shadow: 0px 0px 70px 5px rgba(0, 0, 0, 0.39);
     background-color: rgba(55, 133, 16, 0.459);
     border-radius: 1rem 1rem 1rem 1rem;
+    width: 50%;
 }
 
 .alpha:hover {
@@ -282,6 +286,14 @@ p.hintText {
     color: green;
 }
 
+#container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
 @media(max-width:500px) {
 
     html {
@@ -389,15 +401,13 @@ p.hintText {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
-        font-size: 14px;
+        width: 15%;
+        font-size: 20px;
         margin: auto;
-
-
-
-
         /* margin-left: -3rem; */
     }
+
+
 
     .elements {
         display: flex;
