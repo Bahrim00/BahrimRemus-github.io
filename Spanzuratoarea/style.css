@@ -362,5 +362,14 @@ p.hintText {
         align-items: center;
     }
 
-
+    p.hintText {
+        font-size: 25px;
+        border: gold 1px solid;
+        border-radius: 50rem;
+        color: bisque;
+        margin: auto;
+        padding: 1px;
+        width: max-content;
+        background-color: goldenrod;
+    }
 }
