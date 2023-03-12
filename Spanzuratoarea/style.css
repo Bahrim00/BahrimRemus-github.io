@@ -372,12 +372,15 @@ p.hintText {
         width: fit-content;
         background-color: goldenrod;
     }
+
     .word-div {
         display: inline-flex;
         padding-top: 2rem;
         color: black;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
+        /* margin-left: -3rem; */
     }
 }
