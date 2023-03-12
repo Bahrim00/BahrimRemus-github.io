@@ -289,5 +289,12 @@ p.hintText {
         padding-left: 50px;
         padding-right: 50px;
     }
+    .elements {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 }
