@@ -1,8 +1,9 @@
-html{
-    min-height:100%
+html {
+    min-height: 100%
 }
+
 body {
-    width: fit-content;
+    width: max-content;
     background: rgb(15, 135, 0);
     color: white;
     text-align: center;
@@ -10,7 +11,7 @@ body {
 }
 
 .wrapper {
-    width: fit-content;
+    width: max-content;
     margin: auto;
     font-family: 'Shantell Sans', cursive;
 
@@ -198,7 +199,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    width: fit-content;
+    width: max-content;
     border: 5px black solid;
     margin: auto;
     padding: 1px 110px 1px 110px;
@@ -247,6 +248,7 @@ p.hintText {
     flex-direction: column;
     padding-top: 0px;
     margin-top: 0px;
+
 }
 
 .h3 {
@@ -273,14 +275,92 @@ p.hintText {
     color: green;
 }
 
-@media screen and (max-width: 600px){
-    .elements{
-        width:100%
+@media(max-width:500px) {
+
+    html {
+        min-height: 100%
     }
+
     body {
-        width:80%;
+        width: fit-content;
+        background: rgb(15, 135, 0);
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+        /* disable horizontal scrolling/swiping */
     }
-    .letter-div{
-        font-size:100px;
+
+    .hint-btn,
+    .reset-btn,
+    .notif {
+        width: 100%;
+        margin: 0;
     }
+
+    .hint-btn {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .reset-btn {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+
+    .row {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hint-btn,
+    .reset-btn {
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .hint-btn {
+        margin-bottom: 0.5rem;
+    }
+
+    .reset-btn:hover:before {
+        content: "";
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 15px;
+        width: 30%;
+        padding: 1px 50px 1px 50px;
+        margin: 5px;
+    }
+
+
+    .head {
+        font-size: 17px;
+        margin-left: 20px;
+        padding: 0;
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
