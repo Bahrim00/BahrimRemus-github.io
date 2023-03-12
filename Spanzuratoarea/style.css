@@ -290,7 +290,7 @@ p.hintText {
         padding-right: 50px;
     }
     .elements {
-    width: fit-content;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
