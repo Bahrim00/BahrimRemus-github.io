@@ -27,16 +27,17 @@ let incorrectWords = 0;
 
 
 const words = new Map([
-    ['gerunziu', 'Indiciul'],
-    ['verb', 'Indiciul'],
-    ['perfect compus', 'Indiciul'],
-    ['pasivă', 'Indiciul'],
-    ['conjunctiv', 'Indiciul'],
-    ['impersonal', 'Indiciul'],
-    ['mai-mult-ca-perfect', 'Indiciul'],
-    ['copulativ', 'Indiciul'],
-    ['viitor anterior', 'Indiciul'],
-    ['reflexivă', 'Indiciul'],
+    ['gerunziu', 'Prima litera este "G", iar ultima este "U"'],
+    ['verb', 'Prima litera este "V"'],
+    ['perfect compus', 'Prima litera este "P", iar ultima este "S"'],
+    ['pasivă', 'Prima litera este "P", iar ultima este "Ă"'],
+    ['conjunctiv', 'Prima litera este "C", iar ultima este "V"'],
+    ['impersonal', 'Prima litera este "I", iar ultima este "L"'],
+    ['mai-mult-ca-perfect', 'Prima litera este "M", iar ultima este "T"'],
+    ['copulativ', 'Prima litera este "C", iar ultima este "V"'],
+    ['viitor anterior', 'Prima litera este "V", iar ultima este "R"'],
+    ['reflexivă', 'Prima litera este "R", iar ultima este "Ă"'],
+    ['end', 'Indiciul'],
 ]);
 
 const word_list = [...words.keys()];
@@ -83,6 +84,7 @@ function nextWord() {
             hintTxt.innerHTML = 'Verbul <i class="ghilimele">voi fi citit</i> este la timpul:';
         } else if (selectedWord === 'reflexivă') {
             hintTxt.innerHTML = 'Verbul din enunțul: <i class="ghilimele">Mă gândesc și acum la cartea pe care am terminat-o.</i> este la diateza:';
+
             notificare.classList.add('hidden')
             final.classList.remove('hidden')
 
@@ -91,7 +93,9 @@ function nextWord() {
             Ai raspuns corect la ${correctWords} intrebari.
             Si au avut ${correctWords} raspunsuri gresite.`
 
+
         }
+
     }
     updateHintText(select_word);
 
@@ -279,5 +283,3 @@ nextButton.addEventListener('click', function () {
 // 2. de tinut evidenta la raspunsurile gresite sau corecte
 //  iar acestea sa apara la final, iar la cele corecte sa spuna cuvantul curect.
 // 3. de adaugat event listener pe tastatura.
-
-
