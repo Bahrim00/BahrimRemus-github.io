@@ -71,13 +71,13 @@ function nextWord() {
         } else if (selectedWord === 'perfect compus') {
             hintTxt.innerHTML = 'Verbul <i class="ghilimele">am scris</i> este la timpul:';
         } else if (selectedWord === 'pasivă') {
-            hintTxt.innerHTML = 'Verbul din enunțul <i class="ghilimele">Vei fi plecat luna viitoare</i>, este la diateza: ';
+            hintTxt.innerHTML = 'Verbul din enunțul <i class="ghilimele">Vei fi plecat luna viitoare.</i>, este la diateza: ';
         } else if (selectedWord === 'conjunctiv') {
             hintTxt.innerHTML = 'Verbul <i class="ghilimele">să fi plecat</i>, este la modul:';
         } else if (selectedWord === 'impersonal') {
             hintTxt.innerHTML = 'Verbul <i class="ghilimele">a tuna</i> este un verb:';
         } else if (selectedWord === 'mai-mult-ca-perfect') {
-            hintTxt.innerHTML = 'Verbul din enunțul <i class="ghilimele">Mâncaserăm foarte multă ciocolată</i> este la timpul: ';
+            hintTxt.innerHTML = 'Verbul din enunțul <i class="ghilimele">Mâncaserăm foarte multă ciocolată.</i> este la timpul: ';
         } else if (selectedWord === 'copulativ') {
             hintTxt.innerHTML = 'Verbul <i class="ghilimele">a deveni</i> din enunțul: <i>Ea devine medic.</i> este:';
         } else if (selectedWord === 'viitor anterior') {
@@ -90,8 +90,8 @@ function nextWord() {
 
             final.innerHTML = `
             Jocul s-a terminat!
-            Ai raspuns corect la ${correctWords} intrebari.
-            Si au avut ${correctWords} raspunsuri gresite.`
+            Ai răspuns corect la ${correctWords} întrebări.
+            Și ai avut ${correctWords} răspunsuri greșite.`
 
 
         }
@@ -129,7 +129,7 @@ const init = function (state) {
             hintDiv.classList.add('hidden');
             notif.classList.add('hidden');
         });
-        notif.classList.remove('Câştigat', 'Pierdut');
+        notif.classList.remove('câştigat', 'pierdut');
     }
     const hintTxt = document.querySelector('.hintText');
 
@@ -169,13 +169,13 @@ const showNotif = function (msg) {
     notifContent.innerHTML = `Ai ${msg}`;
     const wrapper = document.querySelector('.wrapper');
 
-    if (msg === 'castigat') {
+    if (msg === 'câștigat') {
         notif.classList.remove('pierdut')
-        notif.classList.add('castigat');
+        notif.classList.add('câștigat');
         correctWords++
 
     } else if (msg === 'pierdut') {
-        notif.classList.remove('castigat')
+        notif.classList.remove('câștigat')
         notif.classList.add('pierdut');
         incorrectWords++
     }
@@ -247,7 +247,7 @@ const letterPress = function () {
         indexes_list.forEach((val, i) => {
             wordDiv.children[val].innerHTML = this.innerHTML;
         });
-        if (checkWord()) showNotif('castigat');
+        if (checkWord()) showNotif('câștigat');
     } else {
         decreaseLife();
     }
