@@ -8,11 +8,10 @@ html {
 
 body {
     width: max-content;
-    background: rgb(15, 135, 0);
     color: white;
     text-align: center;
     background: rgb(15, 135, 0);
-    background: linear-gradient(251deg, rgba(15, 135, 0, 0.4258823529411765) 0%, rgba(0, 228, 224, 0.3905882352941177) 100%);
+    background: linear-gradient(251deg, rgba(112, 187, 102, 0.426) 0%, rgba(203, 224, 224, 0.391) 100%);
 
 
 
@@ -128,7 +127,6 @@ body {
 .word-div {
     display: flex;
     padding-top: 2rem;
-    margin: auto;
     color: black;
     display: flex;
     justify-content: center;
@@ -154,7 +152,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-.notif.castigat {
+.notif.câștigat {
     background-color: rgba(4, 139, 4, 0.8);
 }
 
@@ -240,6 +238,10 @@ button {
 h3 {
     color: black;
     font-size: small;
+}
+
+h2 {
+    padding: 1px;
 }
 
 p.hintText {
