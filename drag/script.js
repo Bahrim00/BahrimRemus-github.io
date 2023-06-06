@@ -47,6 +47,7 @@ function level1() {
         text-align: center;
         border: 5px gray solid;
         border-radius: 50px;
+        position: relative;
     `);
 
     let squares = container.querySelectorAll('.square');
@@ -190,6 +191,7 @@ function level2() {
         text-align: center;
         border: 5px gray solid;
         border-radius: 50px;
+        position: relative;
     `);
 
     let squares = container.querySelectorAll('.square');
@@ -334,6 +336,7 @@ function level3() {
         text-align: center;
         border: 5px gray solid;
         border-radius: 50px;
+        position: relative;
 
     `);
 
@@ -468,11 +471,11 @@ function level4() {
     <div class="square" id="square19"></div>
     <div class="square" id="square20"></div>
     <div class="square mov" id="square21">a face</div>
-    <div class="square target3" id="square22">la harța</div>
+    <div class="square target3" id="square22">la harță</div>
     <div class="square" id="square23"></div>
     <div class="square" id="square24"></div>
     <div class="square target4" id="square25">pe prostul</div>
-    <div class="square target1" id="square26">mură in gură</div>
+    <div class="square target1" id="square26">mură în gură</div>
     <div class="square" id="square27"></div>
     <div class="square" id="square28"></div>
     <div class="square" id="square29"></div>
@@ -482,7 +485,7 @@ function level4() {
     <div class="square" id="square33"></div>
     <div class="square" id="square34"></div>
     <div class="square" id="square35"></div>
-    <div class="square target2" id="square36">inima in dinți</div>
+    <div class="square target2" id="square36">inima în dinți</div>
     <h3 class="levelStatus">Level 4</h3>
     <div class="buttons">
             <button class="prevLevel" onClick="level3()">Nivelul Anterior</button>
@@ -508,6 +511,7 @@ function level4() {
         text-align: center;
         border: 5px gray solid;
         border-radius: 50px;
+        position: relative;
 
     `);
 
@@ -634,7 +638,7 @@ function level5() {
     <div class="square" id="square10"></div>
     <div class="square" id="square11"></div>
     <div class="square blue" id="square12">a pune</div>
-    <div class="square target1" id="square13">ingrijora</div>
+    <div class="square target1" id="square13">îngrijora</div>
     <div class="square" id="square14"></div>
     <div class="square yellow" id="square15">a se da</div>
     <div class="square" id="square16"></div>
@@ -650,7 +654,7 @@ function level5() {
     <div class="square green" id="square26">a sta</div>
     <div class="square" id="square27"></div>
     <div class="square" id="square28"></div>
-    <div class="square target4" id="square29"> cale intoarsă</div>
+    <div class="square target4" id="square29"> cale întoarsă</div>
     <div class="square" id="square30"></div>
     <div class="square" id="square31"></div>
     <div class="square" id="square32"></div>
@@ -682,6 +686,7 @@ function level5() {
         text-align: center;
         border: 5px gray solid;
         border-radius: 50px;
+        position: relative;
 
     `);
 
@@ -828,4 +833,3 @@ function level5() {
     }
 
 };
-
