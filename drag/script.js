@@ -28,7 +28,7 @@ function level1() {
             <button class="reset" onClick="level1()">Resetează</button>
             <button class="nextLevel" onClick="level2()">Nivelul Următor</button>
         </div>
-        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
@@ -169,7 +169,7 @@ function level2() {
             <button class="reset" onClick="level2()">Reseteaza</button>
             <button class="nextLevel" onClick="level3()">Nivelul Urmator</button>
         </div>
-        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
@@ -315,7 +315,7 @@ function level3() {
             <button class="reset" onClick="level3()">Reseteaza</button>
             <button class="nextLevel" onClick="level4()">Nivelul Urmator</button>
     </div>
-        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     
 
@@ -492,7 +492,7 @@ function level4() {
             <button class="reset" onClick="level4()">Reseteaza</button>
             <button class="nextLevel" onClick="level5()">Nivelul Urmator</button>
     </div>
-        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
@@ -667,7 +667,7 @@ function level5() {
             <button class="reset" onClick="level5()">Resetează</button>
             <button class="prevLevel" onClick="level4()">Nivelul Anterior</button>
     </div>
-        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
