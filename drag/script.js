@@ -28,9 +28,8 @@ function level1() {
             <button class="reset" onClick="level1()">Resetează</button>
             <button class="nextLevel" onClick="level2()">Nivelul Următor</button>
         </div>
-        <h4 class='indiciu'>Pentru a trece la nivelul urmator, trebuie sa conectati
-        toate cuvintele, incepand de la patratul colorat.
-        Si de asemenea, toate patratele trebuiesc sa fie colorate.<h4>
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
     container.innerHTML = htmlCode;
@@ -169,9 +168,8 @@ function level2() {
             <button class="reset" onClick="level2()">Reseteaza</button>
             <button class="nextLevel" onClick="level3()">Nivelul Urmator</button>
         </div>
-        <h4 class='indiciu'>Pentru a trece la nivelul urmator, trebuie sa conectati
-        toate cuvintele, incepand de la patratul colorat.
-        Si de asemenea, toate patratele trebuiesc sa fie colorate.<h4>
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
     // nu se opreste de schimbat fundalul atunci cand ajung
@@ -315,9 +313,8 @@ function level3() {
             <button class="reset" onClick="level3()">Reseteaza</button>
             <button class="nextLevel" onClick="level4()">Nivelul Urmator</button>
     </div>
-        <h4 class='indiciu'>Pentru a trece la nivelul urmator, trebuie sa conectati
-        toate cuvintele, incepand de la patratul colorat.
-        Si de asemenea, toate patratele trebuiesc sa fie colorate.<h4>
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     
 
     `;
@@ -492,9 +489,8 @@ function level4() {
             <button class="reset" onClick="level4()">Reseteaza</button>
             <button class="nextLevel" onClick="level5()">Nivelul Urmator</button>
     </div>
-        <h4 class='indiciu'>Pentru a trece la nivelul urmator, trebuie sa conectati
-        toate cuvintele, incepand de la patratul colorat.
-        Si de asemenea, toate patratele trebuiesc sa fie colorate.<h4>
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
     container.innerHTML = htmlCode;
@@ -667,9 +663,8 @@ function level5() {
             <button class="reset" onClick="level5()">Resetează</button>
             <button class="prevLevel" onClick="level4()">Nivelul Anterior</button>
     </div>
-        <h4 class='indiciu'>Pentru a trece la nivelul urmator, trebuie sa conectati
-        toate cuvintele, incepand de la patratul colorat.
-        Si de asemenea, toate patratele trebuiesc sa fie colorate.<h4>
+        <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. 
+        *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
     `;
 
     container.innerHTML = htmlCode;
