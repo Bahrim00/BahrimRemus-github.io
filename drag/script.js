@@ -166,8 +166,8 @@ function level2() {
         <h3 class="levelStatus">Level 2</h3>
         <div class="buttons">
             <button class="prevLevel" onClick="level1()">Nivelul Anterior</button>
-            <button class="reset" onClick="level2()">Reseteaza</button>
-            <button class="nextLevel" onClick="level3()">Nivelul Urmator</button>
+            <button class="reset" onClick="level2()">Resetează</button>
+            <button class="nextLevel" onClick="level3()">Nivelul Următor</button>
         </div>
         <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
@@ -312,8 +312,8 @@ function level3() {
 
     <div class="buttons">
             <button class="prevLevel" onClick="level2()">Nivelul Anterior</button>
-            <button class="reset" onClick="level3()">Reseteaza</button>
-            <button class="nextLevel" onClick="level4()">Nivelul Urmator</button>
+            <button class="reset" onClick="level3()">Resetează</button>
+            <button class="nextLevel" onClick="level4()">Nivelul Următor</button>
     </div>
         <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
@@ -489,8 +489,8 @@ function level4() {
     <h3 class="levelStatus">Level 4</h3>
     <div class="buttons">
             <button class="prevLevel" onClick="level3()">Nivelul Anterior</button>
-            <button class="reset" onClick="level4()">Reseteaza</button>
-            <button class="nextLevel" onClick="level5()">Nivelul Urmator</button>
+            <button class="reset" onClick="level4()">Reseteăza</button>
+            <button class="nextLevel" onClick="level5()">Nivelul Următor</button>
     </div>
         <h4 class='indiciu'>Unește verbele din chenarele colorate pentru a obține locuțiuni verbale. </br>
         *Pentru a putea trece la nivelul următor, toate chenarele trebuie sa fie completate.<h4>
