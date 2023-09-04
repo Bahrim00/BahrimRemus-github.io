@@ -165,8 +165,8 @@
 
     .section1ImgAbout {
         object-fit: cover;
-        width: 40rem;
-        margin: 0px 0px 0px 0px;
+        width: 24rem;
+        margin: auto;
         height: 10rem;
     }
 
@@ -184,9 +184,59 @@
     }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 428px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 26.75rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 420px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 25.75rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 24.4rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 384px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 24rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 23.5rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 22.5rem;
+        margin: auto;
+        height: 10rem;
+    }
+}
 
 @media (min-width: 1200px) {
     .container {
