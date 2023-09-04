@@ -11,6 +11,13 @@
     .footer_section .link_box {
         justify-content: center;
     }
+
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 30rem;
+        margin: 0% 0% 0% 50%;
+        height: auto;
+    }
 }
 
 @media (max-width: 1120px) {
@@ -46,6 +53,14 @@
         padding-left: 0;
         padding-right: 0;
     }
+
+    .section1ImgAbout {
+        object-fit: cover;
+        width: 30rem;
+        margin: 0% 0% 0% 50%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -108,11 +123,11 @@
         margin: 0 10px;
     }
 
-        .section1ImgAbout {
+    .section1ImgAbout {
         object-fit: cover;
-        width: 40rem;
-        margin: 0px 0px 0px 0px;
-        height: 10rem;
+        width: 50rem;
+        margin: 0;
+        height: 15rem;
     }
 
     .aboutUsText {
