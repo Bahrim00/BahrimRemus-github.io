@@ -107,6 +107,20 @@
     .contact_section .info_social a {
         margin: 0 10px;
     }
+
+        .section1ImgAbout {
+        object-fit: cover;
+        width: 40rem;
+        margin: 0px 0px 0px 0px;
+        height: 10rem;
+    }
+
+    .aboutUsText {
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 576px) {
