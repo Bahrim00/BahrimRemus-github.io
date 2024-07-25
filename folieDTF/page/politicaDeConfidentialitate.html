@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Confidențialitate - Printare Folie DTF</title>
+    <link rel="stylesheet" href="/page/termeniSiPolitica.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html">Folie<span>DTF</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="/">Acasa</a></li>
+            <li><a href="/page/despreNoi.html">Despre Noi</a></li>
+        </ul>
+    </nav>
+
+    <section class="privacy-policy">
+        <div class="container">
+            <h1>Politica de Confidențialitate</h1>
+            <p>La FolieDTF, respectăm confidențialitatea datelor dvs. personale și ne angajăm să le protejăm. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile dvs. personale.</p>
+            
+            <h2>Colectarea datelor</h2>
+            <p>Colectăm informații personale atunci când plasați o comandă, vă creați un cont sau ne contactați pentru suport. Informațiile colectate pot include numele, adresa de e-mail, adresa poștală și numărul de telefon.</p>
+            
+            <h2>Utilizarea datelor</h2>
+            <p>Utilizăm informațiile dvs. personale pentru a procesa comenzile, a vă oferi suportul necesar și a vă informa despre produsele și serviciile noastre. De asemenea, putem folosi datele pentru a îmbunătăți experiența dvs. pe site-ul nostru.</p>
+            
+            <h2>Protecția datelor</h2>
+            <p>Folosim măsuri de securitate tehnice și organizatorice pentru a proteja informațiile dvs. personale împotriva accesului neautorizat, pierderii sau modificării. Numai personalul autorizat are acces la datele personale.</p>
+            
+            <h2>Drepturile dvs.</h2>
+            <p>Aveți dreptul să accesați, să corectați sau să ștergeți datele dvs. personale. Dacă doriți să exercitați aceste drepturi, vă rugăm să ne contactați prin e-mail la adresa [email@example.com].</p>
+            
+            <h2>Contact</h2>
+            <p>Dacă aveți întrebări sau nelămuriri cu privire la această politică de confidențialitate, ne puteți contacta la [email@example.com].</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 FolieDTF. Toate drepturile rezervate.</p>
+            <ul class="footer-links">
+                <li><a href="/page/politicaDeConfidentialitate.html">Politica de Confidențialitate</a></li>
+                <li><a href="/page/termeniSiConditii.html">Termeni și Condiții</a></li>
+                <li><a href="/page/despreNoi.html">Despre Noi</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        const menuBtnIcon = menuBtn.querySelector("span.material-symbols-outlined");
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.querySelector('.nav__menu__btn');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuBtn.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

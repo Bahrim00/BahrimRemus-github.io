@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termeni și Condiții - Printare Folie DTF</title>
+    <link rel="stylesheet" href="/page/termeniSiPolitica.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html">Folie<span>DTF</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="/">Acasa</a></li>
+            <li><a href="/page/despreNoi.html">Despre Noi</a></li>
+        </ul>
+    </nav>
+
+    <section class="terms-conditions">
+        <div class="container">
+            <h1>Termeni și Condiții</h1>
+            
+            <h2>Servicii de imprimare DTF</h2>
+            <p>Latimea maxima acceptata este de 58 cm, iar lungimea poate fi oricat de mare. Imprimam folosind culorile CMYK + Alb, iar clientii primesc filmul pregatit pentru transfer. Putem imprima orice design și transfera aceasta pe orice produs, material și culoare, cu o durabilitate incredibila.</p>
+            
+            <h2>Tehnologia DTF</h2>
+            <p>Tehnologia DTF are un cost de achiziție scăzut, print-ul transferat pe textile are culori vii, este mai rezistent la contactul cu substanțele chimice din compoziția detergenților, este foarte elastic și rezistent la acțiuni mecanice (zgâriere, rupere) și poate fi spălat de zeci de ori fără a se deteriora.</p>
+            
+            <h2>Materiale și proces</h2>
+            <p>Folosim cerneală de cea mai înaltă calitate, film și pulbere Kodak TPU pentru a vă oferi cele mai luminoase albe și culori pe orice tip, material, culoare sau elasticitate a articolelor vestimentare. Procesul și materialele noastre asigură durabilitate crescută, elasticitate și rezistență în fața testelor de spălare cele mai riguroase.</p>
+            
+            <h2>Transferul</h2>
+            <p>Transferul se realizează cu presa la 130 grade Celsius, presiune medie-mare. Se acoperă print-ul cu o hârtie de copt și se presează 10 - 15 secunde, în funcție de material. După presare se lasă materialul textil la răcit 30 - 40 de secunde, după care se dezlipește ușor folia. Pentru eliminarea totală a glicerinei din print și pentru stabilizare, se reintroduce materialul textil în presa timp de 5 secunde.</p>
+            
+            <h2>Ghid pentru clienți</h2>
+            <p>GRAFICA trebuie creată la 300 DPI pentru cea mai bună calitate a imprimării. Imaginile cu o calitate inferioară nu se vor imprima bine și pot apărea neclare sau pixelate. Procesul de imprimare are nevoie de o imagine de înaltă calitate pentru a avea o imagine curată și îngrijită. Verificați-vă calitatea marginilor și aveți grijă la marginile pixelate din imagini, acestea se vor imprima și vor apărea ca un contur alb în jurul perimetrului designului dvs. Tipul de fișiere acceptabile: .ai, .pdf, .psd, .png. Trimiteti GRAFICA la dimensionarea exactă pe care o doriți să o imprimați.</p>
+            
+            <h2>Politica de returnare</h2>
+            <p>Nu putem oferi returnări sau schimburi, deoarece toate articolele sunt tipărite pe comandă cu specificațiile dvs. Culori: Nu suntem responsabili pentru culori. Trebuie să vă verificați culorile, nu potrivim culorile și nu verificăm culorile pentru dvs. Se recomandă modul de culoare RGB.</p>
+            
+            <h2>Contact</h2>
+            <p>Dacă aveți întrebări sau nelămuriri cu privire la acești termeni și condiții, ne puteți contacta la [email@example.com].</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 FolieDTF. Toate drepturile rezervate.</p>
+            <ul class="footer-links">
+                <li><a href="/page/politicaDeConfidentialitate.html">Politica de Confidențialitate</a></li>
+                <li><a href="/page/termeniSiConditii.html">Termeni și Condiții</a></li>
+                <li><a href="/page/despreNoi.html">Despre Noi</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        const menuBtnIcon = menuBtn.querySelector("span.material-symbols-outlined");
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.querySelector('.nav__menu__btn');
+            const navLinks = document.querySelector('.nav__links');
+
+            menuBtn.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

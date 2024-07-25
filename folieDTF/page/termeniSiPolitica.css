@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #ff833e;
+    --primary-color-dark: #db6f35;
+    --text-dark: #333333;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Poppins", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--header-font);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Adăugăm un stil de container general pentru secțiuni */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Stiluri pentru imagini */
+.image-container {
+    margin: 1rem 0;
+}
+
+.image-container img {
+    border-radius: 10px;
+}
+
+/* Video styles */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    video {
+        height: 60vh;
+    }
+
+    .section_second_video video{
+        height: 40vh;
+    }
+}
+
+/* Stiluri pentru butoane */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Media Queries pentru ecrane mici */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .container {
+        padding: 1rem 0.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.75rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries pentru ecrane foarte mici, cum ar fi telefoanele mobile */
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9;
+}
+
+.nav__header{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav__logo a{
+    font-size: 3.75rem;
+    margin-left: 30px;
+    font-weight: 400;
+    font-family: var(--white);
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color:var(--white);
+    cursor: pointer;
+}
+
+.nav__links{
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: auto;
+    padding: 2rem;
+    margin: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1; 
+    transform: translateY(-100%);
+    font-size: 25px;
+}
+
+.nav__links.open{
+    transform: translateX(0);
+}
+
+.nav__links a{
+    font-weight: 500;
+    color: var(--white)
+}
+
+.nav__links a:hover{
+    color: var(--text-darks)
+}
+
+.nav__btns{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stiluri pentru footer */
+.footer {
+    width: 100%;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(5deg);
+    z-index: 0;
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color-dark);
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+    video {
+        height: 60vh;
+    }
+
+    .section_second_video video{
+        height: 40vh;
+    }
+}
+
+/* Stiluri generale pentru navigare */
+nav {
+    position: static;
+    padding-block: 2rem 0;
+    padding-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav__header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+}
+
+.nav__logo a {
+    color: var(--text-dark);
+}
+
+.nav__logo a span {
+    color: var(--primary-color);
+}
+
+.nav__menu__btn {
+    display: none;
+}
+
+.nav__links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+}
+
+.nav__links a {
+    padding-block: 5px;
+    color: var(--text-dark);
+    border-bottom: 4px solid transparent;
+    color: var(--primary-color-dark);
+}
+
+.nav__links a:hover {
+    border-color: var(--primary-color);
+}
+
+.nav__btns {
+    display: flex;
+    flex: 1;
+}
+
+.nav__btns .btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem; /* Corectat de la font-style la font-size */
+    white-space: nowrap;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Media Queries pentru ecrane mici */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav__menu__btn {
+        display: block;
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .nav__links {
+        display: none; /* Ascunde meniul de navigare pe ecrane mici */
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .nav__links.active {
+        display: flex; /* Afișează meniul de navigare când butonul este activat */
+    }
+
+    .nav__links a {
+        padding-block: 1rem;
+        text-align: center;
+    }
+}
+
+/* Media Queries pentru ecrane foarte mici, cum ar fi telefoanele mobile */
+@media (max-width: 480px) {
+    .nav__btns .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

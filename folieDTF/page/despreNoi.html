@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi - Folie DTF</title>
+    <meta name="description" content="Aflați mai multe despre serviciile noastre de imprimare folie DTF și echipamentele de top pe care le utilizăm.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/page/DespreNoi.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html">Folie<span>DTF</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="/index.html">Acasa</a></li>
+            <li><a href="/page/despreNoi.html">Despre Noi</a></li>
+        </ul>
+    </nav>
+
+    <header class="header__container">
+        <div class="imagine-container">
+            <img class="imagine" src="/assets/poza.png" alt="poza">
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h1>Despre Noi</h1>
+            <p>Suntem o firmă specializată în personalizare, cu accent pe imprimarea DTF. Dispunem de echipamente profesionale de ultimă generație care ne permit să livrăm rezultate de înaltă calitate pentru toate proiectele de imprimare. De la alegerea materialelor la finalizarea produsului, ne asigurăm că fiecare detaliu este perfect.</p>
+            <p>La FolieDTF, ne concentrăm pe excelență și inovație. Fiecare proiect este tratat cu cea mai mare atenție, utilizând cele mai bune resurse pentru a garanta satisfacția clienților noștri.</p>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2>Valorile Noastre</h2>
+            <ul>
+                <li><strong>Calitate:</strong> Ne angajăm să oferim produse de cea mai înaltă calitate.</li>
+                <li><strong>Inovație:</strong> Investim constant în tehnologie pentru a rămâne la curent cu cele mai noi tendințe.</li>
+                <li><strong>Transparență:</strong> Comunicăm deschis cu clienții noștri pentru a asigura o experiență plăcută.</li>
+                <li><strong>Responsabilitate:</strong> Ne asumăm responsabilitatea pentru fiecare proiect și ne asigurăm că livrăm rezultate excelente.</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section class="contact">
+        <div class="contact-container">
+            <h1 class="contact-title">Contactați-ne</h1>
+            <p class="contact_title">Dacă aveți întrebări sau doriți să plasați o comandă, vă rugăm să ne contactați folosind informațiile de mai jos sau completați formularul de contact.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@exemplu.com">contact@exemplu.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+123456789">+123 456 789</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Adresă</h3>
+                    <p>Strada Exemplu, Nr. 10, Oraș, 123456, România</p>
+                </div>
+            </div>
+            <div class="form-contact">
+            <form action="mailto:contact@exemplu.com" method="post" enctype="text/plain" class="contact-form">
+                <h2>Trimiteți-ne un mesaj</h2>
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subiect:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Trimite</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 FolieDTF. Toate drepturile rezervate.</p>
+            <ul class="footer-links">
+                <li><a href="#">Politica de Confidențialitate</a></li>
+                <li><a href="#">Termeni și Condiții</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        const menuBtnIcon = menuBtn.querySelector("span.material-symbols-outlined");
+        document.addEventListener('DOMContentLoaded', function () {
+            menuBtn.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
