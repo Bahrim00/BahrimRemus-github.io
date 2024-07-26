@@ -28,7 +28,6 @@ a{
 body{
     font-family: "Poppins", sans-serif;
 }
-
 nav{
     position: fixed;
     isolation: isolate;
@@ -687,7 +686,7 @@ nav {
     padding-block: 5px;
     color: var(--text-dark);
     border-bottom: 4px solid transparent;
-    color: var(--primary-color-dark);
+    color: var(--text-dark);
 }
 
 .nav__links a:hover {
@@ -731,6 +730,10 @@ nav {
   }
 
   @media (max-width: 480px) {
+    nav {
+        position: relative; /* Necesită pentru poziționarea absolută a nav__links */
+    }
+    
     .nav__menu__btn {
         display: block;
         background-color: var(--primary-color);
@@ -741,25 +744,45 @@ nav {
         cursor: pointer;
         font-size: 1rem;
     }
-
+    
     .nav__links {
         display: none;
         flex-direction: column;
+        position: absolute;
+        top: 100%; /* Afișează sub nav__header */
+        left: 0;
         width: 100%;
+        background-color: var(--background-color);
+        z-index: 1000;
         gap: 1rem;
+        padding: 1rem;
     }
-
+    
     .nav__links.active {
         display: flex;
+        margin: 0;
+        background-color: var(--primary-color-dark);
+    }
+    
+    .nav__links a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        color: var(--white);
     }
 
-    .nav__links a {
-        padding-block: 1rem;
-        text-align: center;
+    .nav__links a:hover {
+        color: var(--hover-link-color);
+        background-color: var(--hover-background-color);
+        transform: scale(1.02);
     }
 
     .section2 .text_section2 h1 {
         font-size: 1em;
+    }
+
+    .imagine-container .imagine{
+        height: 20vh;
     }
 
     .container_section1 {
