@@ -772,6 +772,15 @@ nav {
         transform: scale(1.02);
     }
 
+
+
+    .container_section1 button {
+        font-size: 20px; /* Ajustează dimensiunea fontului pentru mobil */
+        width: 80vw; /* Ajustează lățimea butonului pentru mobil */
+        height: 7vh; /* Ajustează înălțimea butonului pentru mobil */
+    }
+    
+
     .section2 .text_section2 h1 {
         font-size: 1em;
     }
