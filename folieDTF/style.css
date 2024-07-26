@@ -120,7 +120,7 @@ video {
     margin: 0;
     margin: 20px 0px;
     object-fit: cover;
-    
+    pointer-events: none;
 }
 
 
@@ -779,7 +779,7 @@ nav {
         width: 80vw; /* Ajustează lățimea butonului pentru mobil */
         height: 7vh; /* Ajustează înălțimea butonului pentru mobil */
     }
-    
+
 
     .section2 .text_section2 h1 {
         font-size: 1em;
