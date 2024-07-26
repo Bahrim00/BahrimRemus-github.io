@@ -34,3 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('contact-btn').addEventListener('click', function() {
     document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        var videos = document.querySelectorAll('video');
+        videos.forEach(function(video) {
+            video.play().catch(function(error) {
+                console.log('Video autoplay failed: ', error);
+            });
+        });
+    });
