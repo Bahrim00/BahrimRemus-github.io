@@ -2,8 +2,8 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("span.material-symbols-outlined");
 document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.nav__menu__btn');
-    const navLinks = document.querySelector('.nav__links');
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
 
     menuBtn.addEventListener('click', function () {
         navLinks.classList.toggle('active');
@@ -27,4 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
+
+
+
+document.getElementById('contact-btn').addEventListener('click', function() {
+    document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
 });
