@@ -218,75 +218,6 @@ video {
     transform: scale(1.05);
 }
 
-/* Media queries pentru dispozitive mai mici */
-@media (max-width: 1200px) {
-    .container_section1 {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .text_section1 h1 {
-        font-size: 2.5rem;
-    }
-
-    .text_section1 p {
-        font-size: 18px;
-    }
-
-    .container_section1 button {
-        width: 20vw;
-        font-size: 20px;
-        height: 6vh;
-    }
-}
-
-@media (max-width: 768px) {
-    .container_section1 {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .text_section1 h1 {
-        font-size: 2rem;
-    }
-
-    .text_section1 p {
-        font-size: 16px;
-    }
-
-    .container_section1 button {
-        width: 25vw;
-        font-size: 18px;
-        height: 7vh;
-    }
-}
-
-@media (max-width: 480px) {
-    .container_section1 {
-        width: 95%;
-        padding: 5px;
-    }
-
-    .text_section1 h1 {
-        font-size: 1.5rem;
-    }
-
-    .text_section1 p {
-        font-size: 14px;
-    }
-
-    .container_section1 button {
-        width: 30vw;
-        font-size: 16px;
-        height: 8vh;
-    }
-}
-
-
-
-
-
-
 
 .section2 {
     width: 100%;
@@ -302,8 +233,9 @@ video {
     width: 80%;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 40px;
+    font-size: 2em;
 }
+
 
 .card-container {
     display: flex;
@@ -333,7 +265,7 @@ video {
 }
 
 .card-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-bottom: 0.rem;
     color: var(--primary-color-dark);
 }
@@ -380,6 +312,8 @@ video {
 }
 
 
+
+
 .imagine-container {
     position: relative;
     overflow: hidden; /* Ascunde orice parte a imaginii care depășește containerul */
@@ -397,6 +331,7 @@ video {
 
 
 
+
 /* Stiluri pentru secțiunea info */
 .info {
     width: 100%;
@@ -407,7 +342,7 @@ video {
     justify-content: center;
     align-items: flex-start; /* Schimbat de la center pentru a evita alinierea centrală pe ecrane mici */
     gap: 2rem;
-    flex-wrap: wrap; /* Permite elementelor să se împacheteze în linie pe ecrane mici */
+   
 }
 
 .info-item {
@@ -490,39 +425,6 @@ video {
     left: 0;
     color: var(--primary-color-dark);
     font-weight: bold;
-}
-
-/* Media Queries pentru ecrane mici */
-@media (max-width: 768px) {
-    .info {
-        flex-direction: column;
-        align-items: stretch; /* Asigură că elementele se alătură pe ecrane mici */
-    }
-
-    .info-item {
-        width: 100%;
-        margin-bottom: 1rem; /* Adaugă spațiu între elemente pe ecrane mici */
-    }
-
-    .info-text {
-        font-size: 1rem; /* Ajustează dimensiunea fontului pentru ecrane mici */
-    }
-    .info h2 {
-        font-size: 5vw;
-    }
-}
-
-@media (max-width: 480px) {
-    .info-text {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru ecrane foarte mici */
-    }
-    .info h2 {
-        font-size: 5vw;
-    }
-
-    .info-btn {
-        font-size: 0.9rem; /* Ajustează dimensiunea fontului pentru buton pe ecrane mici */
-    }
 }
 
 
@@ -666,51 +568,8 @@ video {
 }
 
 /* Media queries pentru dispozitive mai mici */
-@media (max-width: 1200px) {
-    .contact-title {
-        font-size: 1.75rem;
-    }
 
-    .contact .contact-container {
-        width: 90%;
-    }
-}
 
-@media (max-width: 768px) {
-    .contact-title {
-        font-size: 1.5rem;
-    }
-
-    .contact .contact-container {
-        padding: 1.5rem;
-    }
-
-    .contact-item {
-        padding: 0.75rem;
-    }
-
-    .contact-item h3 {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-title {
-        font-size: 1.25rem;
-    }
-
-    .contact .contact-container {
-        padding: 1rem;
-    }
-
-    .contact-item {
-        padding: 0.5rem;
-    }
-
-    .contact-item h3 {
-        font-size: 0.9rem;
-    }
-}
 
 
 
@@ -786,15 +645,6 @@ video {
 
 
 
-@media (min-width: 1024px) {
-    video {
-        height: 60vh;
-    }
-
-    .section_second_video video{
-        height: 40vh;
-    }
-}
 
 /* Stiluri generale pentru navigare */
 nav {
@@ -860,14 +710,27 @@ nav {
     cursor: pointer;
 }
 
-/* Media Queries pentru ecrane mici */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
 
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+  }
+
+  @media (min-width: 321px) and (max-width: 360px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+  }
+
+  @media (max-width: 480px) {
     .nav__menu__btn {
         display: block;
         background-color: var(--primary-color);
@@ -880,26 +743,395 @@ nav {
     }
 
     .nav__links {
-        display: none; /* Ascunde meniul de navigare pe ecrane mici */
+        display: none;
         flex-direction: column;
         width: 100%;
         gap: 1rem;
     }
 
     .nav__links.active {
-        display: flex; /* Afișează meniul de navigare când butonul este activat */
+        display: flex;
     }
 
     .nav__links a {
         padding-block: 1rem;
         text-align: center;
     }
+
+    .section2 .text_section2 h1 {
+        font-size: 1em;
+    }
+
+    .container_section1 {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .text_section1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .text_section1 p {
+        font-size: 14px;
+    }
+
+    .container_section1 button {
+        width: 30vw;
+        font-size: 16px;
+        height: 8vh;
+    }
+
+    .card{
+        padding: 0;
+        margin: 0;
+    }
+
+    .card, .special-card {
+        width: 90vw;
+        font-size: 1em;
+        margin: 1em;
+    }
+
+
+    .special-card .card-content .special-card_p {
+        font-size: 1em;
+        border-bottom: 2px solid var(--primary-color-dark);
+        margin: 1em;
+        border-radius: 10px;
+      }
+
+    .card-content p {
+        font-size: 1em;
+        color: #333;
+      }
+
+
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.21em;
+    }
+
+    .info h2 {
+        color: var(--primary-color-dark);
+        font-size: 1em;
+        text-align: center;
+      }
+
+    #important-info-list li {
+        margin-bottom: 2rem;
+        font-size: 0.8em;
+        text-align: center;
+        border-bottom: 1px solid var(--primary-color-dark);
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      }
+    .info-btn {
+        font-size: 0.9rem;
+    }
+
+
+    
+
+    .contact-title {
+        font-size: 1.25rem;
+    }
+
+    .contact .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-item {
+        padding: 0.5rem;
+    }
+
+    .contact-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact .contact-container .contact_title {
+        font-size: 1em;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        margin: 2rem;
+      }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    
 }
 
-/* Media Queries pentru ecrane foarte mici, cum ar fi telefoanele mobile */
-@media (max-width: 480px) {
-    .nav__btns .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+    .container_section1 {
+        width: 95%;
+        padding: 10px;
     }
-}
+
+    .text_section1 h1 {
+        font-size: 2rem;
+    }
+
+    .text_section1 p {
+        font-size: 16px;
+    }
+
+    .container_section1 button {
+        width: 25vw;
+        font-size: 18px;
+        height: 7vh;
+    }
+
+
+    .info {
+        flex-direction: column;
+        align-items: stretch; /* Asigură că elementele se alătură pe ecrane mici */
+    }
+
+    .info-item {
+        width: 100%;
+        margin-bottom: 1rem; /* Adaugă spațiu între elemente pe ecrane mici */
+    }
+
+    .info-text {
+        font-size: 1rem; /* Ajustează dimensiunea fontului pentru ecrane mici */
+    }
+    .info h2 {
+        font-size: 5vw;
+    }
+
+    .imagine-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagine {
+        width: 90%; /* Face imaginea să se extindă pe întreaga lățime a containerului */
+        height: auto; /* Menține aspectul imaginii */
+        display: block; /* Elimină spațiile adiționale de sub imagine */
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .special-card .card-content{
+        width: 80vw;
+    }
+
+
+    .contact-title {
+        font-size: 1.25rem;
+    }
+
+    .contact .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-item {
+        padding: 0.5rem;
+    }
+
+    .contact-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact .contact-container {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 0.75rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact .contact-container {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 0.75rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1rem;
+    }
+
+    .contact .contact-container .contact_title {
+        font-size: 1rem;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        margin: 2rem
+    }
+  }
+
+
+
+
+
+
+
+/* Tablete (portret) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+    
+  }
+
+
+
+
+  
+  /* Tablete (peisaj) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+  }
+
+
+
+
+
+  
+  /* Laptopuri și desktopuri mici */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .section2 .text_section2 h1  {
+        font-size: 0.51em;
+    }
+
+    
+
+    .contact-title {
+        font-size: 1.75rem;
+    }
+
+    .contact .contact-container {
+        width: 90%;
+    }
+
+    .contact-title {
+        font-size: 1.75rem;
+    }
+
+    .contact .contact-container {
+        width: 90%;
+    }
+    .container_section1 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .text_section1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .text_section1 p {
+        font-size: 18px;
+    }
+
+
+
+    .container_section1 button {
+        width: 20vw;
+        font-size: 20px;
+        height: 6vh;
+    }
+
+    .section_second_video video {
+        height: 40vh;
+    }
+  }
+
+
+
+
+
+  
+  /* Laptopuri mari / Desktopuri */
+  @media (min-width: 1281px) and (max-width: 1440px) {
+
+    .header__container video {
+        height: 40vh;
+    }
+    .section_second_video video {
+        height: 40vh;
+    }
+
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+
+
+
+
+
+  /* Desktopuri mari */
+  @media (min-width: 1441px) {
+    
+    .header__container video {
+        height: 60vh;
+    }
+    .section_second_video video {
+        height: 40vh;
+    }
+
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
